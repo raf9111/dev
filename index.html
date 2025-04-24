@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casino Events</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b3d2e;
+      color: #f2eecb;
+      background-image: url('https://cdn.pixabay.com/photo/2020/01/12/09/31/green-4758783_1280.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      text-align: center;
+      color: gold;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    .events-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .event {
+      background-color: #213b2d;
+      border: 1px solid #3c6650;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      display: flex;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    .event img {
+      width: 200px;
+      object-fit: cover;
+    }
+    .event-details {
+      padding: 1rem;
+      flex: 1;
+    }
+    .event-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .event-date {
+      color: #c2b280;
+      margin-bottom: 0.5rem;
+    }
+    .event-meta {
+      font-size: 0.95rem;
+      color: #d0d0d0;
+    }
+  </style>
+</head>
+<body>
+  <header>Casino Events</header>
+  <div class="events-container">
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Backgammon_board.jpg/640px-Backgammon_board.jpg" alt="Backgammon Tournament" />
+      <div class="event-details">
+        <div class="event-title">Backgammon Tournament</div>
+        <div class="event-date">September 5, 2025</div>
+        <div class="event-meta">Upcoming event – sign-up coming soon</div>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Poker_chips.jpg/640px-Poker_chips.jpg" alt="Poker Tournament" />
+      <div class="event-details">
+        <div class="event-title">Poker Tournament</div>
+        <div class="event-date">March 15, 2025</div>
+        <div class="event-meta">14 participants<br />3 winners</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
